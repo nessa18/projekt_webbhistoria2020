@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Grundläggande Principer</title>
+
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<header class="blog-header py-3">
+			<div class="row flex-nowrap justify-content-center align-items-center">
+				<a class="blog-header-logo text-dark" href="index.html">Webb Historia</a>
+			</div>
+		</header>
+
+		<div class="nav-scroller py-1 mb-2">
+			<nav class="nav d-flex justify-content-between">
+				<a class="p-2 text-muted" href="index.html">Startsida</a>
+				<a class="p-2 text-muted" href="event.html">20-Talets Händelse</a>
+				<a class="p-2 text-dark font-weight-bold" href="principles.html">Grundläggande Principer</a>
+				<a class="p-2 text-muted" href="publishing.html">Webbpubliceringssystem</a>
+			</nav>
+		</div>
+
+		<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+			<div class="col-md-6 px-0">
+				<h1 class="display-4 font-italic">Webb Historia Projekt</h1>
+				<p class="lead my-3">A site dedicated to the history of the Internet. Here you will find in-depth articles and impressive events that have happened over the decades as well as other blog posts.</p>
+			</div>
+		</div>
+	</div>
+
+	<main role="main" class="container">
+		<div class="row">
+			<div class="col-md-12 blog-main">
+				<div class="blog-post">
+					<h2 class="blog-post-title">TCP/IP</h2>
+					<p class="blog-post-meta">Developed in the 1970s</p>
+					<hr>
+					<p>TCP/IP specifies how data is exchanged over the internet by providing end-to-end communications that identify how it should be broken into packets, addressed, transmitted, routed and received at the destination. TCP/IP requires little central management and is designed to make networks reliable with the ability to recover automatically from the failure of any device on the network.</p>
+					<p>The two main protocols in the IP suite serve specific functions. TCP defines how applications can create channels of communication across a network. It also manages how a message is assembled into smaller packets before they are then transmitted over the internet and reassembled in the right order at the destination address.</p>
+					<p>IP defines how to address and route each packet to make sure it reaches the right destination. Each gateway computer on the network checks this IP address to determine where to forward the message. Common TCP/IP protocols include the following:</p>
+					<ul>
+						<li>HTTP (Hypertext Transfer Protocol), which handles the communication between a web server and a web browser</li>
+						<li>HTTPS (HTTP Secure), which handles secure communication between a web server and a web browser</li>
+						<li>FTP (File Transfer Protocol), which handles transmission of files between computers</li>
+					</ul>
+					<h3>How does TCP/IP work?</h3>
+					<p>TCP/IP uses the client-server model of communication in which a user or machine (a client) is provided a service, like sending a webpage, by another computer (a server) in the network. Collectively, the TCP/IP suite of protocols is classified as stateless, which means each client request is considered new because it is unrelated to previous requests. Being stateless frees up network paths so they can be used continuously.</p>
+					<p>The transport layer itself, however, is stateful. It transmits a single message, and its connection remains in place until all the packets in a message have been received and reassembled at the destination. The TCP/IP model differs slightly from the seven-layer Open Systems Interconnection (OSI) networking model designed after it. The OSI reference model defines how applications can communicate over a network.</p>
+					<h3>The 4 layers of TCP/IP</h3>
+					<ol>
+						<li>The application layer – Provides applications with standardized data exchange</li>
+						<li>The transport layer – Responsible for maintaining end-to-end communications across the network</li>
+						<li>The network layer – Deals with packets and connects independent networks to transport the packets across network boundaries</li>
+						<li>The physical layer – Consists of protocols that operate only on a link — the network component that interconnects nodes or hosts in the network</li>
+					</ol>
+					<img class="blog-img" src="assets/images/tcp.png" alt="TCP/IP">
+					<h3>Why is TCP/IP important?</h3>
+					<p>TCP/IP is nonproprietary and, as a result, is not controlled by any single company. Therefore, the IP suite can be modified easily. It is compatible with all operating systems (OSes), so it can communicate with any other system. The IP suite is also compatible with all types of computer hardware and networks.</p>
+					<p>TCP/IP is highly scalable and, as a routable protocol, can determine the most efficient path through the network. It is widely used in current internet architecture.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="blog-footer">
+		<p>Vanessa - Webb Historia Projekt</p>
+		<p><a href="#">Back to top</a></p>
+	</footer>
+
+	<script src="assets/js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+	<script>
+		window.jQuery || document.write("<script src=\"../../assets/js/vendor/jquery-slim.min.js\"><\/script>")
+	</script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	Holder.addTheme("thumb", {
+		bg: "#55595c",
+		fg: "#eceeef",
+		text: "Thumbnail"
+	});
+	</script>
+</body>
+
+</html>
